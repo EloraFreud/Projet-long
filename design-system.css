@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+:root {
+    /* color styles*/
+    --primary-color: linear-gradient(90deg, rgba(191,153,255,1) 0%, rgba(129,181,235,1) 100%);
+    --secondary: #7248D6;
+    --tertiary: #372C51;
+    --black: #180323;
+    --white: #F4EEF5;
+
+    /* font */
+    --space-grotext: 'Space Grotesk', sans-serif;
+    --work-sans: 'Work Sans', sans-serif;
+
+    /* other */
+    --padding: 1.5rem;
+
+    --radius-m: 1.5rem;
+    --radius-s: 1.2rem;
+
+    --gap-16: 1rem;
+    --gap-8: .5rem;
+
+
+    --width: 80%;
+}
+
+body{
+    background-color: var(--black);
+}
+
+/* ---- Text style ---- */
+h1, h2, h3{
+    font-family: var(--space-grotext);
+    margin-block: 0;
+    color: var(--white);
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p{
+    margin-block: 0;
+    color: var(--white);
+}
+
+.body, .body2{
+    font-family: var(--work-sans);
+}
+
+.body{
+    font-size: 16px;
+}
+
+.body2{
+    font-size: 12px;
+}
+
+/* ---- Icons ---- */
+
+.icon{
+    display: inline-block;
+}
+
+.icon-24{
+    height: 24px;
+    width: 24px;
+}
+
+.icon-20{
+    height: 20px;
+    width: 20px;
+}
+
+.icon-04{
+    height: 4px;
+    width: 4px;
+}
+
+.icon-90{
+    height: 90px;
+    width: 90px;
+}
+
+.icon-primary {
+  background: var(--primary-color);
+}
+
+.icon-white{
+    background: var(--white);
+}
+
+.icon-black{
+    background: var(--black);
+}
+
+.icon-search{
+    mask: url("icons/search.svg");
+    -webkit-mask-box-image: url("icons/search.svg");
+    mask-size: cover;
+}
+
+.icon-notifications{
+    mask: url("icons/notifications.svg");
+    -webkit-mask-box-image: url("icons/notifications.svg");
+    mask-size: cover;
+}
+
+.icon-arrow-right{
+    mask: url("icons/arrow-right.svg");
+    -webkit-mask-box-image: url("icons/arrow-right.svg");
+    mask-size: cover;
+}
+
+.icon-home{
+    mask: url("icons/home.svg");
+    -webkit-mask-box-image: url("icons/home.svg");
+    mask-size: cover;
+}
+
+.icon-collection{
+    mask: url("icons/collection.svg");
+    -webkit-mask-box-image: url("icons/collection.svg");
+    mask-size: cover;
+}
+
+.icon-community{
+    mask: url("icons/community.svg");
+    -webkit-mask-box-image: url("icons/community.svg");
+    mask-size: cover;
+}
+
+.icon-challenges{
+    mask: url("icons/challenges.svg");
+    -webkit-mask-box-image: url("icons/challenges.svg");
+    mask-size: cover;
+}
+
+.icon-profil{
+    mask: url("icons/profil.svg");
+    -webkit-mask-box-image: url("icons/profil.svg");
+    mask-size: cover;
+}
+
+.icon-double-flag{
+    mask: url("icons/double-flag.svg");
+    -webkit-mask-box-image: url("icons/double-flag.svg");
+    mask-size: cover;
+}
+
+.icon-nav-round{
+    mask: url("icons/nav-round.svg");
+    -webkit-mask-box-image: url("icons/nav-round.svg");
+    mask-size: cover;
+}
+
+.icon-arrow-left{
+    mask: url("icons/arrow-left.svg");
+    -webkit-mask-box-image: url("icons/arrow-left.svg");
+    mask-size: cover;
+}
+
+.icon-flag{
+    mask: url("icons/flag.svg");
+    -webkit-mask-box-image: url("icons/flag.svg");
+    mask-size: cover;
+}
+
+.icon-close{
+    mask: url("icons/close.svg");
+    -webkit-mask-box-image: url("icons/close.svg");
+    mask-size: cover;
+}
+
+.icon-article{
+    mask: url("icons/article.svg");
+    -webkit-mask-box-image: url("icons/article.svg");
+    mask-size: cover;
+}
+
+.icon-game{
+    mask: url("icons/game.svg");
+    -webkit-mask-box-image: url("icons/game.svg");
+    mask-size: cover;
+}
+
+.icon-comment{
+    mask: url("icons/comment.svg");
+    -webkit-mask-box-image: url("icons/comment.svg");
+    mask-size: cover;
+}
+
+.icon-heart{
+    mask: url("icons/heart.svg");
+    -webkit-mask-box-image: url("icons/heart.svg");
+    mask-size: cover;
+}
+
+.icon-save{
+    mask: url("icons/save.svg");
+    -webkit-mask-box-image: url("icons/save.svg");
+    mask-size: cover;
+}
+
+.icon-more{
+    mask: url("icons/more.svg");
+    -webkit-mask-box-image: url("icons/more.svg");
+    mask-size: cover;
+}
+
+.icon-send{
+    mask: url("icons/send.svg");
+    -webkit-mask-box-image: url("icons/send.svg");
+    mask-size: cover;
+}
+
+.icon-add{
+    mask: url("icons/add.svg");
+    -webkit-mask-box-image: url("icons/add.svg");
+    mask-size: cover;
+}
+
+.icon-progression-75{
+    mask: url("icons/progression-75.svg");
+    -webkit-mask-box-image: url("icons/progression-75.svg");
+    mask-size: cover;
+}
+
+/* ------- Composants ------- */
+
+/* --- Tags --- */
+
+.tags{
+    background-color: var(--secondary);
+    border-radius: 8px;
+    width: fit-content;
+    padding: 4px 10px;
+}
+
+/* --- Cards --- */
+
+.card{
+    border-radius: var(--radius-m);
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+}
+
+/* Card bottom */
+
+.inline{
+    display: inline-block;
+}
+
+.card-bottom{
+    background-color: var(--tertiary);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.button-arrow{
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: var(--padding);
+    border: none;
+}
+
+.h2-card{
+    margin-bottom: 4px;
+}
+
+.h3-card{
+    margin-bottom: 6px;
+}
+
+/* Card image */
+
+.card-image{
+    aspect-ratio: 1/1;
+    width: var(--width);
+    background-image: url(images/themes/trou-noir.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover; 
+}
+
+
+/* --- Nav Bar --- */
+.nav {
+	width: var(--width);
+	background-color: var(--tertiary);
+	border-radius: var(--radius-m);
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+	
+.nav-list {
+	list-style: none;
+	display: flex;
+    justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+	
+.nav-link {
+	text-decoration: none;
+}
+
+.nav-indicator {
+    display: flex;
+    position: absolute;
+    bottom: .9rem;
+    left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.nav-link.active .nav-indicator {
+    transform: translateX(0);
+}
+
+/* --- Button--- */
+.button{
+    font-family: var(--space-grotext);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+    padding: .8rem 1rem;
+    border-radius: var(--radius-s);
+    background: var(--primary-color);
+    border: none;
+}
+
+/* --- Header --- */
+.icon-header{
+    display: flex;
+    gap: var(--gap-16);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: var(--width);
+}
+
+/* --- Secondary Title --- */
+
+.secondary-title{
+    display: flex;
+    gap: var(--gap-8);
+    width: var(--width);
+}
+
+.colored-secondary-title{
+    background-image: var(--primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-16);
+}
+
+.text-progression{
+    width: 12rem;
+}
+
+.progression{
+    width: var(--width);
+}
+
+/* --- Card carousel --- */
+
+.carousel {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    background-color: red;
+}
+  
+.carousel__list {
+      display: flex;
+      list-style: none;
+      position: relative;
+      justify-content: center;
+}
+    
+.carousel__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      transition: all .3s ease-in;
+}
+      
+      &[data-pos="0"] {
+        z-index: 5;
+      }
+      
+      &[data-pos="-1"],
+      &[data-pos="1"] {
+        opacity: 0.7;
+        filter: blur(1px) grayscale(10%);
+      }
+      
+      &[data-pos="-1"] {
+        transform: translateX(-40%) scale(.9);
+        z-index: 4;
+      }
+      
+      &[data-pos="1"] {
+        transform: translateX(40%) scale(.9);
+        z-index: 4;
+      }
+      
+      &[data-pos="-2"],
+      &[data-pos="2"] {
+        opacity: 0.4;
+        filter: blur(3px) grayscale(20%);
+      }
+      
+      &[data-pos="-2"] {
+        transform: translateX(-70%) scale(.8);
+        z-index: 3;
+      }
+      
+      &[data-pos="2"] {
+        transform: translateX(70%) scale(.8);
+        z-index: 3;
+      }
+    }
+  }
