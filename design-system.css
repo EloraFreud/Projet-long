@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Work+Sans&display=swap');
 
 html {
     box-sizing: border-box;
@@ -31,7 +31,11 @@ html {
     --gap-8: .5rem;
 
 
-    --width: 80%;
+    --width: 85%;
+
+    --margin-24: 1.5rem;
+    --margin-16: 1rem;
+    --margin-8: .5rem;
 }
 
 body{
@@ -47,12 +51,12 @@ h1, h2, h3{
 
 h1{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h2{
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h3{
@@ -316,6 +320,7 @@ p{
 	border-radius: var(--radius-m);
     padding: 1rem 1.5rem;
     position: relative;
+    margin-bottom: var(--margin-24);
 }
 	
 .nav-list {
@@ -390,6 +395,7 @@ p{
     justify-content: space-between;
     align-items: center;
     gap: var(--gap-16);
+    margin-bottom: var(--margin-8);
 }
 
 .text-progression{
@@ -460,5 +466,3 @@ p{
         transform: translateX(70%) scale(.8);
         z-index: 3;
       }
-    }
-  }

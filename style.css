@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+:root {
+    /* color styles*/
+    --primary-color: linear-gradient(90deg, rgba(191,153,255,1) 0%, rgba(129,181,235,1) 100%);
+    --secondary: #7248D6;
+    --tertiary: #372C51;
+    --black: #180323;
+    --white: #F4EEF5;
+
+    /* font */
+    --space-grotext: 'Space Grotesk', sans-serif;
+    --work-sans: 'Work Sans', sans-serif;
+
+    /* other */
+    --padding: 1.5rem;
+
+    --radius-m: 1.5rem;
+    --radius-s: 1.2rem;
+
+    --gap-16: 1rem;
+    --gap-8: .5rem;
+
+
+    --width: 85%;
+    
+    --margin-32: 2rem;
+    --margin-24: 1.5rem;
+    --margin-16: 1rem;
+    --margin-8: .5rem;
+
+}
+
+.center{
+    margin: auto;
+}
+
+.carousel{
+    width: var(--width);
+    height: 450px;
+    background-color: var(--tertiary);
+    border-radius: var(--radius-m);
+}
+
+.header{
+    margin-top: var(--margin-32);
+    margin-bottom: var(--margin-32);
+}
+
+.progression{
+    margin-bottom: var(--margin-32);
+}
+
+.secondary-title{
+    margin-bottom: var(--margin-24);
+}
+
+.nav{
+    bottom: var(--margin-24);
+    /* j'arrive pas à le foutre en bas c'est aberrant */
+    margin-top: 65px;
+}
