@@ -265,15 +265,24 @@ p{
 /* --- Cards --- */
 
 .card{
-    border-radius: var(--radius-m);
+    position: absolute;
+    background-color: blueviolet;
+
+    width: var(--width);
+    max-width: 400px;
+    min-width: 300px;
+
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+    /* border-radius: var(--radius-m);
     overflow: hidden;
     display: flex;
-    align-items: end;
+    align-items: end; */
 }
 
 /* Card bottom */
 
-.inline{
+/* .inline{
     display: inline-block;
 }
 
@@ -299,18 +308,18 @@ p{
 
 .h3-card{
     margin-bottom: 6px;
-}
+} */
 
 /* Card image */
 
-.card-image{
+/* .card-image{
     aspect-ratio: 1/1;
     width: var(--width);
     background-image: url(images/themes/trou-noir.png);
     background-repeat: no-repeat;
     background-position: center center; 
     background-size: cover; 
-}
+} */
 
 
 /* --- Nav Bar --- */
@@ -409,10 +418,15 @@ p{
 /* --- Card carousel --- */
 
 .carousel {
+    position: relative;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 80%;
     height: 100%;
-    align-items: center;
+
     background-color: red;
 }
   
