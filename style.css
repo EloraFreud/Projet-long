@@ -38,32 +38,3 @@ html {
 
 }
 
-.center{
-    margin: auto;
-}
-
-.carousel{
-    width: var(--width);
-    height: 450px;
-    background-color: var(--tertiary);
-    border-radius: var(--radius-m);
-}
-
-.header{
-    margin-top: var(--margin-32);
-    margin-bottom: var(--margin-32);
-}
-
-.progression{
-    margin-bottom: var(--margin-32);
-}
-
-.secondary-title{
-    margin-bottom: var(--margin-24);
-}
-
-.nav{
-    bottom: var(--margin-24);
-    /* j'arrive pas à le foutre en bas c'est aberrant */
-    margin-top: 65px;
-}
