@@ -5,7 +5,7 @@ const carousel = document.querySelector("#carousel");
         let drag = false;
   
         cards.forEach((card, i) => {
-          card.addEventListener("mousedown", () => {
+          card.addEventListener("  ", () => {
             drag = card.classList.contains("active");
           });
   

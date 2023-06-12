@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity nav</title>
+    <style>
+        *, *:after, *:before{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #180323;
+        }
+
+        label{
+            font-family: 'Space Grotext', sans-serif;
+        }
+
+        .icon-2{
+            width: 24px;
+            padding-left: 24px;
+            overflow: hidden;
+            background: url(icons/game.svg);
+        }
+
+        .none{
+            display: none;
+        }
+
+        .nav-container{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .tabs *{
+            z-index: 2;
+        }
+
+        .tabs{
+            display: flex;
+            position: relative;
+            align-items: center;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 24px;
+        }
+
+        input[type="radio"]{
+            display: none;
+        }
+
+        .tab{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            width: 120px;
+            height: 30px;
+            font-weight: 400;
+            border-radius: 99px;
+            cursor: pointer;
+            transition: color 0.15s ease-in;
+        }
+
+        input[type="radio"]:checked + label{
+            color: white;
+        }
+
+        input[id="radio-1"]:checked ~ .slider{
+            transform: translateX(0);
+        }
+        
+        input[id="radio-2"]:checked ~ .slider{
+            transform: translateX(100%);
+        }
+
+        input[id="radio-3"]:checked ~ .slider{
+            transform: translateX(200%);
+        }
+
+        input[id="radio-4"]:checked ~ .slider{
+            transform: translateX(300%);
+        }
+
+        input[id="radio-5"]:checked ~ .slider{
+            transform: translateX(400%);
+        }
+
+        .slider{
+            position: absolute;
+            display: flex;
+            background-color: #7248D6;
+            width: 120px;
+            height: 40px;
+            border-radius: 99px;
+            z-index: 1;
+            color: white;
+            transition: 0.25s ease-out;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="tabs">
+            <input type="radio" id="radio-1" name="tabs" checked >
+            <label class="tab" for="radio-1">Article</label>
+            
+            <input type="radio" id="radio-2" name="tabs" checked >
+            <label class="tab" for="radio-2">Jeux</label>
+            <!-- <label class="tab icon-2 none" for="radio-2"></label> -->
+
+            <input type="radio" id="radio-3" name="tabs" checked >
+            <label class="tab" for="radio-3">Jetons</label>
+
+            <input type="radio" id="radio-4" name="tabs" checked >
+            <label class="tab" for="radio-4">Communauté</label>
+
+            <input type="radio" id="radio-5" name="tabs" checked >
+            <label class="tab" for="radio-5">Close</label>
+
+            <span class="slider"></span>
+        </div>
+    </nav>
+    
+</body>
+</html>

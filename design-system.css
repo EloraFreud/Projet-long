@@ -46,7 +46,7 @@ body{
     position: relative;
     /* faire gaffe dans les autres pages, je l'ai mis pour le scroll dans subject de base */
     /* overflow: hidden; */
-    padding-top: 72px;
+    /* padding-top: 72px; */
 }
 
 .home-page, .subject-page{
@@ -80,17 +80,18 @@ h1{
 }
 
 h2{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 h3{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 
-.secondary-header-title{
-    font-size: 20px;
+h4{
+    font-size: 14px;
+    font-weight: 500;
 }
 
 p{
@@ -271,6 +272,12 @@ p{
 .icon-add{
     mask: url("icons/add.svg");
     -webkit-mask-box-image: url("icons/add.svg");
+    mask-size: cover;
+}
+
+.icon-play{
+    mask: url("icons/play.svg");
+    -webkit-mask-box-image: url("icons/play.svg");
     mask-size: cover;
 }
 
@@ -591,4 +598,42 @@ img {
 .quiz-button{
     display: flex;
     margin: var(--margin-24) auto;
+}
+
+/* --- Activity article --- */
+
+.img-article{
+    border-radius: var(--radius-24);
+    width: var(--width-100);
+    margin-bottom: var(--margin-16);
+}
+
+.article-title{
+    margin-top: var(--margin-24);
+    margin-bottom: var(--margin-8);
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    gap: var(--gap-8);
+    margin-bottom: var(--margin-16);
+}
+
+.time-text{
+    font-weight: large;
+}
+
+.article-text{
+    margin-bottom: var(--margin-16);
+}
+
+.tags-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-8);
+    margin-bottom: var(--margin-32);
 }
