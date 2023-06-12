@@ -24,8 +24,8 @@ html {
     /* other */
     --padding: 1.5rem;
 
-    --radius-m: 1.5rem;
-    --radius-s: 1.2rem;
+    --radius-24: 1.5rem;
+    --radius-20: 1.2rem;
 
     --gap-16: 1rem;
     --gap-8: .5rem;
@@ -36,6 +36,7 @@ html {
 
     --margin-32: 2rem;
     --margin-24: 1.5rem;
+    --margin-20: 1.2rem;
     --margin-16: 1rem;
     --margin-8: .5rem;
 }
@@ -43,6 +44,9 @@ html {
 body{
     background-color: var(--black);
     position: relative;
+    /* faire gaffe dans les autres pages, je l'ai mis pour le scroll dans subject de base */
+    /* overflow: hidden; */
+    padding-top: 72px;
 }
 
 .home-page, .subject-page{
@@ -51,6 +55,10 @@ body{
 
 .none{
     display: none;
+}
+
+.fixe{
+    position: sticky;
 }
 
 .center{
@@ -272,6 +280,15 @@ p{
     mask-size: cover;
 }
 
+.activity-button{
+    padding: 8px 12px;
+    background-color: var(--tertiary);
+    border: none;
+    border-radius: var(--radius-24);
+    display: flex;
+    align-items: center;
+}
+
 /* ------- Composants ------- */
 
 /* --- Tags --- */
@@ -297,7 +314,7 @@ p{
     aspect-ratio: 1/1;
     border-radius: 1.5rem;
     transition: transform 0.3s ease-out, opacity 0.3s ease-in;
-    /* border-radius: var(--radius-m);
+    /* border-radius: var(--radius-24);
     overflow: hidden;
     display: flex;
     align-items: end; */
@@ -347,11 +364,13 @@ p{
 
 /* --- Nav Bar --- */
 .nav {
-	width: var(--width);
 	background-color: var(--tertiary);
-	border-radius: var(--radius-m);
+	border-radius: var(--radius-24);
     padding: 1rem 1.5rem;
-    /* j'arrive pas à le foutre en bas c'est aberrant */
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.75rem;
+    left: 1.75rem;
 }
 	
 .nav-list {
@@ -379,13 +398,24 @@ p{
 }
 
 /* --- Button--- */
-.button{
+.button-s{
     font-family: var(--space-grotext);
     font-size: 14px;
     font-weight: 500;
     color: var(--black);
     padding: .8rem 1rem;
-    border-radius: var(--radius-s);
+    border-radius: var(--radius-20);
+    background: var(--primary-color);
+    border: none;
+}
+
+.button-m{
+    font-family: var(--space-grotext);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-20);
     background: var(--primary-color);
     border: none;
 }
@@ -409,6 +439,7 @@ p{
 
 /* --- Secondary header --- */
 .secondary-header{
+    position: relative;
     display: flex;
     gap: var(--gap-16);
     align-items: center;
@@ -420,6 +451,7 @@ p{
 /* --- Secondary Title --- */
 
 .secondary-title{
+    position: relative;
     display: flex;
     gap: var(--gap-8);
     width: var(--width-100);
@@ -451,6 +483,7 @@ p{
 .progression{
     width: var(--width-100);
     margin-bottom: var(--margin-32);
+    position: relative;
 }
 
 /* --- Carousel --- */
@@ -459,7 +492,7 @@ p{
     width: var(--width-100);
     height: 400px;
     /* background-color: var(--tertiary); */
-    border-radius: var(--radius-m);
+    border-radius: var(--radius-24);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -489,7 +522,7 @@ img {
 }
 
 .subject-img{
-    border-radius: var(--radius-s);
+    border-radius: var(--radius-20);
     width: 60px;
     height: 60px;
 }
@@ -501,8 +534,61 @@ img {
 }
 
 .subject{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: var(--gap-20);
+}
+
+/* ------------------------------------------ ca scroll pas ? */
+.subject-container{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* --- Quiz --- */
+
+/* ------------------------------------------ voir comment faire la selection du button avec gradient border 
+    border: 10px solid;
+    border-image-slice: 1;
+    border-image-source: var(--primary-color);
+    border-radius: var(--radius-24);
+*/
+.img-quiz{
+    width: var(--width-100);
+    margin-bottom: var(--margin-24);
+}
+
+.answer-quiz{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+    color: var(--white);
+    background-color: var(--tertiary);
+    border-radius: var(--radius-20);
+    margin-bottom: var(--margin-16);
+    text-align: center;
+}
+
+.quiz-header{
+    width: var(--width-100);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: var(--margin-24);
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-8);
+    margin-bottom: var(--margin-24);
+}
+
+.quiz-button{
+    display: flex;
+    margin: var(--margin-24) auto;
 }
