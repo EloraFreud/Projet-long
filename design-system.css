@@ -32,7 +32,7 @@ html {
     --gap-20: 1.25rem;
 
     --width-100: 100%;
-    --width: 85%;
+    --width-85: 85%;
 
     --margin-32: 2rem;
     --margin-24: 1.5rem;
@@ -47,6 +47,7 @@ body{
     /* faire gaffe dans les autres pages, je l'ai mis pour le scroll dans subject de base */
     /* overflow: hidden; */
     /* padding-top: 72px; */
+    margin: 0;
 }
 
 .home-page, .subject-page{
@@ -62,7 +63,7 @@ body{
 }
 
 .center{
-    width: var(--width);
+    width: var(--width-85);
     /* background-color: red; */
     margin: auto;
 }
@@ -109,6 +110,7 @@ p{
 
 .body2{
     font-size: 12px;
+    font-weight: 400;
 }
 
 /* ---- Icons ---- */
@@ -309,28 +311,56 @@ p{
 
 /* --- Cards --- */
 
-.card{
+.card-test{
     position: absolute;
     bottom: 0;
     background-color: blueviolet;
 
-    /* max-width: 400px;
-    min-width: 300px; */
+    max-width: 400px;
+    min-width: 300px;
     width: var(--width-100);
 
     aspect-ratio: 1/1;
     border-radius: 1.5rem;
     transition: transform 0.3s ease-out, opacity 0.3s ease-in;
-    /* border-radius: var(--radius-24);
+    border-radius: var(--radius-24);
     overflow: hidden;
     display: flex;
-    align-items: end; */
+    align-items: end;
 }
 
 /* Card bottom */
 
-/* .inline{
-    display: inline-block;
+.button-arrow{
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: var(--padding);
+    border: none;
+}
+
+.card{
+    width: var(--width-100);
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-24);
+    overflow: hidden;
+    position: absolute;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.card-image{
+    /* je sais pas comment faire pour la taille */
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: -2.5rem;
+}
+
+.h2-card{
+    margin-bottom: 4px;
+}
+
+.h3-card{
+    margin-bottom: 6px;
 }
 
 .card-bottom{
@@ -340,33 +370,9 @@ p{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
-
-.button-arrow{
-    padding: 24px;
-    background-color: var(--white);
-    border-radius: var(--padding);
-    border: none;
-}
-
-.h2-card{
-    margin-bottom: 4px;
-}
-
-.h3-card{
-    margin-bottom: 6px;
-} */
-
-/* Card image */
-
-/* .card-image{
-    aspect-ratio: 1/1;
-    width: var(--width);
-    background-image: url(images/themes/trou-noir.png);
-    background-repeat: no-repeat;
-    background-position: center center; 
-    background-size: cover; 
-} */
 
 
 /* --- Nav Bar --- */
@@ -462,7 +468,7 @@ p{
     display: flex;
     gap: var(--gap-8);
     width: var(--width-100);
-    margin-bottom: var(--margin-24);
+    margin-bottom: var(--margin-32);
 }
 
 .colored-secondary-title{
@@ -602,6 +608,11 @@ img {
 
 /* --- Activity article --- */
 
+.article-page{
+    background-color: var(--tertiary);
+    padding: var(--margin-32);
+}
+
 .img-article{
     border-radius: var(--radius-24);
     width: var(--width-100);
@@ -609,7 +620,7 @@ img {
 }
 
 .article-title{
-    margin-top: var(--margin-24);
+    /* margin-top: var(--margin-24); */
     margin-bottom: var(--margin-8);
 }
 
@@ -636,4 +647,199 @@ img {
     flex-wrap: wrap;
     gap: var(--gap-8);
     margin-bottom: var(--margin-32);
+}
+
+/* --- Activity game --- */
+
+.game-page{
+    background-color: var(--tertiary);
+    padding: var(--margin-32);
+    height: 100vh;
+} 
+
+.game-title{
+    text-align: center;
+    margin-bottom: var(--margin-8);
+}
+
+.game-text{
+    width: var(--width-100);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.img-game{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.arrows{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: var(--margin-32);
+}
+
+.circle{
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(var(--tertiary), var(--tertiary)) padding-box,
+              var(--primary-color) border-box;
+    border-radius: 100%;
+    border: 2px solid transparent;
+}
+
+.circles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: var(--margin-32);
+}
+
+.answer{
+    width: 116px;
+    height: 116px;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--tertiary);
+    text-align: center;
+}
+
+.answers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-20);
+    width: var(--width-85);
+    margin: auto;
+}
+
+/* --- Activity game --- */
+
+.token-page{
+    background-color: var(--tertiary);
+    padding: var(--margin-32);
+} 
+
+.token-title{
+    text-align: center;
+    width: var(--width-85);
+    margin: auto;
+    margin-bottom: var(--margin-32);
+}
+
+.token-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    display: grid;
+    gap: 2rem;
+    margin: auto;
+    width: var(--width-100);
+    height: 50rem;
+    margin-bottom: var(--margin-32);
+}
+
+.img-token{
+    width: 140px;
+    height: 140px;
+}
+
+.token{
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(var(--tertiary), var(--tertiary)) padding-box,
+              var(--primary-color) border-box;
+    border-radius: 100%;
+    border: 2px solid transparent;
+}
+
+/* --- Component community --- */
+
+.pseudo-statu{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pp-pseudo{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-16);
+}
+
+.img-pp{
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+}
+
+.header-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: var(--width-100);
+    margin-bottom: var(--margin-16);
+}
+
+.contenu-post{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-16);
+    width: var(--width-100);
+    margin-bottom: var(--margin-16);
+}
+
+.heart-comment{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-8);
+}
+
+.footer-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: var(--width-100);
+    padding-bottom: var(--gap-20);
+    border-bottom: 1px solid var(--black);
+}
+
+.community-post{
+    margin-bottom: var(--margin-20);
+    margin-trim: block;
+}
+
+/* --- Activity community --- */
+
+.community-page{
+    background-color: var(--tertiary);
+    padding: var(--margin-32);
+} 
+
+.question-community{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-8);
+}
+
+.pp{
+    width: 58px;
+    height: 58px;
+    border-radius: var(--radius-20);
+}
+
+.ask-question{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-16);
+    align-items: center;
+    margin-bottom: var(--margin-24);
 }
