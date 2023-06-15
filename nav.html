@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vars.css">
+    <link rel="stylesheet" href="icons.css">
+    <style>
+        *{
+            transition: all 0.4s ease-out;
+        }
+
+        body{
+            background-color: #666;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        #activity-nav{
+            font-size: 24px;
+        }
+
+        #activity-nav > ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+
+        #activity-nav li{
+            border-radius: 24px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            border-radius: 20px;
+            padding: 25px;
+        }
+
+        #activity-nav li > *{
+            position: absolute;
+        }
+
+        #activity-nav i{
+            height: 1em;
+        }
+
+        #activity-nav li.active > div{
+            scale: 1;
+        }
+        #activity-nav li.active > i{
+            display: none;
+        }
+        #activity-nav li:not(.active) > div{
+            scale: 0;
+        }
+        #activity-nav li:not(.active) > i{
+            display: inherit;
+        }
+    </style>
+</head>
+<body>
+    <nav id="activity-nav">
+        <ul>
+            <li class="active"><div>Article</div><i class="i-article"></i></li>
+            <li><div>Jeux</div> <i class="i-game"></i></li>
+            <li><div>Jetons</div> <i class="i-collection"></i></li>
+            <li><div>Communaute</div> <i class="i-community"></i></li>
+            <li><div><!-- RIEN --></div><i class="i-close"></i></li>
+        </ul>
+    </nav>
+
+    <script>
+        const links = document.querySelectorAll("#activity-nav li");
+
+        links.forEach(link => link.addEventListener("click",(ev) => {
+            console.log(ev);
+            links.forEach(l => l.classList.remove("active"))
+            link.classList.add("active")
+        }))
+    </script>
+</body>
+</html>

@@ -52,6 +52,7 @@ body{
 
 .home-page, .subject-page{
     position: relative;
+    max-height: 100vh;
 }
 
 .none{
@@ -66,6 +67,11 @@ body{
     width: var(--width-85);
     /* background-color: red; */
     margin: auto;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
 }
 
 /* ---- Text style ---- */
@@ -558,6 +564,7 @@ img {
 .subject-container{
     overflow-x: hidden;
     overflow-y: scroll;
+    flex: 1;
 }
 
 /* --- Quiz --- */
@@ -737,9 +744,9 @@ img {
 }
 
 .token-grid{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    display: grid;
     gap: 2rem;
     margin: auto;
     width: var(--width-100);
@@ -843,3 +850,9 @@ img {
     align-items: center;
     margin-bottom: var(--margin-24);
 }
+
+/* --- Activity community --- */
+
+.community{
+    padding: var(--margin-32);
+} 
