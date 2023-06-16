@@ -60,12 +60,7 @@ body{
 .fixe{
     position: sticky;
 }
-/* 
-.center{
-    width: var(--width-85);
-    /* background-color: red; */
-    margin: auto;
-} */
+
 
 ul{
     list-style-type: none;
