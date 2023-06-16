@@ -34,6 +34,42 @@ function updateIndicator(activeLink) {
   // decaler l'indicateur
   const linkRect = activeLink.getBoundingClientRect();
   const indicatorOffset =
-    linkRect.left - navIndicator.parentElement.getBoundingClientRect().left;
+  linkRect.left - navIndicator.parentElement.getBoundingClientRect().left;
   navIndicator.style.transform = `translateX(${indicatorOffset}px)`;
 }
+
+// activity nav bar
+const links = document.querySelectorAll("#activity-nav li:not(#activity-close)");
+const elements = document.querySelectorAll(".activity");
+updateActivityNav(document.querySelector("#activity-nav li"));
+
+links.forEach((link) => {
+  console.log(link);
+  link.addEventListener("click", () => {
+    updateActivityNav(link);
+  });
+});
+
+function updateActivityNav(activeActivityLink) {
+      const target = activeActivityLink.dataset.target;
+  
+      //changer l'apparence du button cliqué
+      links.forEach(l => l.classList.remove("active"));
+      activeActivityLink.classList.add("active");
+      
+      
+      elements.forEach(element => {
+        if (element.id === target) {
+          element.classList.add("visible");
+          element.classList.remove("none");
+        } else {
+          element.classList.add("none");
+          element.classList.remove("visible");
+        }
+      })
+}
+
+
+
+
+

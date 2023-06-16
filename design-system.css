@@ -35,6 +35,7 @@ html {
     --width-85: 85%;
 
     --margin-32: 2rem;
+    --margin-28: 1.75rem;
     --margin-24: 1.5rem;
     --margin-20: 1.2rem;
     --margin-16: 1rem;
@@ -55,9 +56,6 @@ body{
     max-height: 100vh;
 }
 
-.none{
-    display: none;
-}
 
 .fixe{
     position: sticky;
@@ -390,6 +388,7 @@ p{
     bottom: 1.5rem;
     right: 1.75rem;
     left: 1.75rem;
+    z-index: 10;
 }
 	
 .nav-list {
@@ -614,10 +613,14 @@ img {
 }
 
 /* --- Activity article --- */
+.activity-properties{
+    padding: var(--margin-28);
+    background-color: var(--tertiary);
+    border-radius: 24px 24px 0 0;
+}
 
 .article-page{
-    background-color: var(--tertiary);
-    padding: var(--margin-32);
+   
 }
 
 .img-article{
@@ -653,15 +656,12 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--gap-8);
-    margin-bottom: var(--margin-32);
 }
 
 /* --- Activity game --- */
 
 .game-page{
-    background-color: var(--tertiary);
-    padding: var(--margin-32);
-    height: 100vh;
+    height: 100%;
 } 
 
 .game-title{
@@ -729,12 +729,7 @@ img {
     margin: auto;
 }
 
-/* --- Activity game --- */
-
-.token-page{
-    background-color: var(--tertiary);
-    padding: var(--margin-32);
-} 
+/* --- Activity token --- */ 
 
 .token-title{
     text-align: center;
@@ -826,11 +821,6 @@ img {
 
 /* --- Activity community --- */
 
-.community-page{
-    background-color: var(--tertiary);
-    padding: var(--margin-32);
-} 
-
 .question-community{
     display: flex;
     flex-direction: column;
@@ -855,4 +845,58 @@ img {
 
 .community{
     padding: var(--margin-32);
+    margin-bottom: var(--margin-32);
 } 
+
+/* --- Activity nav bar --- */
+
+#activity-nav {
+    display: flex;
+    justify-content: center;
+    padding: 24px 28px 16px 28px;
+}
+
+#activity-nav>ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#activity-nav>ul>li{
+    background-color: var(--tertiary);
+    padding: 8px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#activity-nav>ul>li:not(.active)>h3 {
+    display: none;
+}
+
+#activity-nav>ul>.active>i:not(.icon-close) {
+    display: none;
+}
+
+#activity-nav>ul>.active {
+    background: var(--primary-color);
+}
+
+#activity-nav>ul>.active>h3 {
+    color: var(--black);
+}
+
+/* <!-- ---------------------------------------
+                PAGE TRANSITION
+----------------------------------------- --> */
+
+.none{
+    display: none;
+}
+
+.visible{
+    display: inherit;
+}

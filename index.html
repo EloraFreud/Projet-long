@@ -9,267 +9,291 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ---------------------------------------------------------------------------------------------
+
+    <!-- //-------                      -----------//
+    --------------       NAV BAR        -------------
+    //------------                      -------// -->
+
+    <section class="home-page-container none">
+        <!-- ----------------------------------------------------------------
+                       NAV BAR
+        ----------------------------------------------------------------- -->    
+        <nav class="nav">
+            <i class="icon-04 icon-primary icon-nav-round nav-indicator"></i>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        <i class="icon icon-24 icon-primary icon-home"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collection">
+                        <i class="icon icon-24 icon-white icon-collection"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#community">
+                        <i class="icon icon-24 icon-white icon-community"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#challenges">
+                        <i class="icon icon-24 icon-white icon-challenges"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#profil">
+                        <i class="icon icon-24 icon-white icon-profil"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ------------------------------------------------------------------
                     HOME 
-    ---------------------------------------------------------------------------------------------- -->
-    <section class="home-page center none">
-        <!-- --- Header --- -->
-        <header class="header">
-            <h1>Explorer l'espace</h1>
-            <div class="icon-header">
-                <i class="icon icon-24 icon-white icon-search"></i>
-                <i class="icon icon-24 icon-white icon-notifications"></i>
-            </div>
-        </header>
+        ------------------------------------------------------------------- -->
+        <section class="home-page center none">
+            <!-- --- Header --- -->
+            <header class="header">
+              <h1>Explorer l'espace</h1>
+               <div class="icon-header">
+                  <i class="icon icon-24 icon-white icon-search"></i>
+                  <i class="icon icon-24 icon-white icon-notifications"></i>
+              </div>
+            </header>
     
-        <!-- --- Progression --- -->
-        <section class="progression">
-            <div class="inline">
-                <h3 class="text-progression">Wow ! <br> objectif quotidien est presque atteint 🪐</h3>
-                <img draggable="false" src="images/progression-75.png" alt="Progression">
-            </div>
-            <button class="button-s">Continuer</button>
-        </section>
+              <!-- --- Progression --- -->
+            <section class="progression">
+                <div class="inline">
+                  <h3 class="text-progression">Wow ! <br> objectif quotidien est presque atteint 🪐</h3>
+                  <img draggable="false" src="images/progression-75.png" alt="Progression">
+                </div>
+                <button class="button-s">Continuer</button>
+            </section>
     
-        <!-- --- Secondary Title --- -->
-        <section class="secondary-title">
-            <i class="icon icon-20 icon-white icon-double-flag"></i>
-            <h3>Ton voyage</h3>
-        </section>
+            <!-- --- Secondary Title --- -->
+            <section class="secondary-title">
+                <i class="icon icon-20 icon-white icon-double-flag"></i>
+                <h3>Ton voyage</h3>
+            </section>
     
-        <!-- --- Card carousel --- -->
-        <article id="carousel" class="carousel">
-            <!-- <div class="card-test"></div>
-            <div class="card-test"></div>
-            <div class="card-test"></div> -->
-            <section class="card">
-                <img class="card-image" src="images/themes/trou-noir.png" alt="image trou noir">
-                <article class="card-bottom">
-                    <div>
-                        <h2 class="h2-card">Les trous noirs</h2>
-                        <h3 class="h3-card">10 leçons</h3>
-                        <p class="body2 tags">En cours</p>
-                    </div>
-                    <button class="button-arrow">
-                        <i class="icon icon-24 icon-black icon-arrow-right"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="card">
-                <img class="card-image" src="images/themes/systeme-solaire.png" alt="image systeme solaire">
-                <article class="card-bottom">
-                    <div>
-                        <h2 class="h2-card">Le système solaire</h2>
-                        <h3 class="h3-card">8 leçons</h3>
-                        <p class="body2 tags">En cours</p>
-                    </div>
-                    <button class="button-arrow">
-                        <i class="icon icon-24 icon-black icon-arrow-right"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="card">
-                <img class="card-image" src="images/themes/cometes.png" alt="image comète">
-                <article class="card-bottom">
-                    <div>
-                        <h2 class="h2-card">Les comètes</h2>
-                        <h3 class="h3-card">11 leçons</h3>
-                        <p class="body2 tags">Pas commencé</p>
-                    </div>
-                    <button class="button-arrow">
-                        <i class="icon icon-24 icon-black icon-arrow-right"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="card">
-                <img class="card-image" src="images/themes/einstein.png" alt="image einstein">
-                <article class="card-bottom">
-                    <div>
-                        <h2 class="h2-card">La relativité générale</h2>
-                        <h3 class="h3-card">12 leçons</h3>
-                        <p class="body2 tags">En cours</p>
-                    </div>
-                    <button class="button-arrow">
-                        <i class="icon icon-24 icon-black icon-arrow-right"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="card">
-                <img class="card-image" src="images/themes/constellations.png" alt="image constellation">
-                <article class="card-bottom">
-                    <div>
-                        <h2 class="h2-card">Les constellations</h2>
-                        <h3 class="h3-card">9 leçons</h3>
-                        <p class="body2 tags">En cours</p>
-                    </div>
-                    <button class="button-arrow">
-                        <i class="icon icon-24 icon-black icon-arrow-right"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="card">
-                <img class="card-image" src="images/themes/voie-lactee.png" alt="image voie lactée">
-                <article class="card-bottom">
-                    <div>
-                        <h2 class="h2-card">La voie lactée</h2>
-                        <h3 class="h3-card">11 leçons</h3>
-                        <p class="body2 tags">En cours</p>
-                    </div>
-                    <button class="button-arrow">
-                        <i class="icon icon-24 icon-black icon-arrow-right"></i>
-                    </button>
-                </article>
-            </section>
+            <!-- --- Card carousel --- -->
+
+            <!-- <article id="carousel" class="carousel">
+                <section class="card">
+                    <img class="card-image" src="images/themes/trou-noir.png" alt="image trou noir">
+                    <article class="card-bottom">
+                        <div>
+                            <h2 class="h2-card">Les trous noirs</h2>
+                            <h3 class="h3-card">10 leçons</h3>
+                            <p class="body2 tags">En cours</p>
+                        </div>
+                        <button class="button-arrow">
+                            <i class="icon icon-24 icon-black icon-arrow-right"></i>
+                        </button>
+                    </article>
+                </section>
+                <section class="card">
+                    <img class="card-image" src="images/themes/systeme-solaire.png" alt="image systeme solaire">
+                    <article class="card-bottom">
+                        <div>
+                            <h2 class="h2-card">Le système solaire</h2>
+                            <h3 class="h3-card">8 leçons</h3>
+                            <p class="body2 tags">En cours</p>
+                        </div>
+                        <button class="button-arrow">
+                            <i class="icon icon-24 icon-black icon-arrow-right"></i>
+                        </button>
+                    </article>
+                </section>
+                <section class="card">
+                    <img class="card-image" src="images/themes/cometes.png" alt="image comète">
+                    <article class="card-bottom">
+                        <div>
+                            <h2 class="h2-card">Les comètes</h2>
+                            <h3 class="h3-card">11 leçons</h3>
+                            <p class="body2 tags">Pas commencé</p>
+                        </div>
+                        <button class="button-arrow">
+                            <i class="icon icon-24 icon-black icon-arrow-right"></i>
+                        </button>
+                    </article>
+                </section>
+                <section class="card">
+                    <img class="card-image" src="images/themes/einstein.png" alt="image einstein">
+                    <article class="card-bottom">
+                        <div>
+                            <h2 class="h2-card">La relativité générale</h2>
+                            <h3 class="h3-card">12 leçons</h3>
+                            <p class="body2 tags">En cours</p>
+                        </div>
+                        <button class="button-arrow">
+                            <i class="icon icon-24 icon-black icon-arrow-right"></i>
+                        </button>
+                    </article>
+                </section>
+                <section class="card">
+                    <img class="card-image" src="images/themes/constellations.png" alt="image constellation">
+                    <article class="card-bottom">
+                        <div>
+                            <h2 class="h2-card">Les constellations</h2>
+                            <h3 class="h3-card">9 leçons</h3>
+                            <p class="body2 tags">En cours</p>
+                        </div>
+                        <button class="button-arrow">
+                            <i class="icon icon-24 icon-black icon-arrow-right"></i>
+                        </button>
+                    </article>
+                </section>
+                <section class="card">
+                    <img class="card-image" src="images/themes/voie-lactee.png" alt="image voie lactée">
+                    <article class="card-bottom">
+                        <div>
+                            <h2 class="h2-card">La voie lactée</h2>
+                            <h3 class="h3-card">11 leçons</h3>
+                            <p class="body2 tags">En cours</p>
+                        </div>
+                        <button class="button-arrow">
+                            <i class="icon icon-24 icon-black icon-arrow-right"></i>
+                        </button>
+                    </article>
+                </section>
+    
+            </article> -->
         </section>
-        </article>
+
+        <!-- -----------------------------------------------------------------
+                   COMMUNITY
+        ------------------------------------------------------------------ -->
+        <section class="community none">
+            <header class="header">
+                <h1>Communauté</h1>
+                    <i class="icon icon-24 icon-primary icon-add icon-header"></i>
+            </header>
+            <article class="community-post">
+                <header class="header-post">
+                    <div class="pp-pseudo">
+                        <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
+                        <div class="pseudo-statu">
+                            <h3>Astrogeek</h3>
+                            <p class="body2">Confirmé · 23h</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-more"></i>
+                </header>
+                <div class="contenu-post">
+                    <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
+                    <img src="images/quiz/trou-noir2.png" alt="image trou noir">
+                </div>
+                <footer class="footer-post">
+                    <div class="heart-comment">
+                        <i class="icon icon-20 icon-white icon-heart"></i>
+                        <i class="icon icon-20 icon-white icon-comment"></i>
+                    </div>
+                    <i class="icon icon-20 icon-white icon-save"></i>
+                </footer>
+            </article>
+            <article class="community-post">
+                <header class="header-post">
+                    <div class="pp-pseudo">
+                        <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
+                        <div class="pseudo-statu">
+                            <h3>Astrogeek</h3>
+                            <p class="body2">Confirmé · 23h</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-more"></i>
+                </header>
+                <div class="contenu-post">
+                    <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
+                </div>
+                <footer class="footer-post">
+                    <div class="heart-comment">
+                        <i class="icon icon-20 icon-white icon-heart"></i>
+                        <i class="icon icon-20 icon-white icon-comment"></i>
+                    </div>
+                    <i class="icon icon-20 icon-white icon-save"></i>
+                </footer>
+            </article>
+            <article class="community-post">
+                <header class="header-post">
+                    <div class="pp-pseudo">
+                        <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
+                        <div class="pseudo-statu">
+                            <h3>Astrogeek</h3>
+                            <p class="body2">Confirmé · 23h</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-more"></i>
+                </header>
+                <div class="contenu-post">
+                    <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
+                </div>
+                <footer class="footer-post">
+                    <div class="heart-comment">
+                        <i class="icon icon-20 icon-white icon-heart"></i>
+                        <i class="icon icon-20 icon-white icon-comment"></i>
+                    </div>
+                    <i class="icon icon-20 icon-white icon-save"></i>
+                </footer>
+            </article>
+            <article class="community-post">
+                <header class="header-post">
+                    <div class="pp-pseudo">
+                        <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
+                        <div class="pseudo-statu">
+                            <h3>Astrogeek</h3>
+                            <p class="body2">Confirmé · 23h</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-more"></i>
+                </header>
+                <div class="contenu-post">
+                    <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
+                    <img src="images/quiz/trou-noir2.png" alt="image trou noir">
+                </div>
+                <footer class="footer-post">
+                    <div class="heart-comment">
+                        <i class="icon icon-20 icon-white icon-heart"></i>
+                        <i class="icon icon-20 icon-white icon-comment"></i>
+                    </div>
+                    <i class="icon icon-20 icon-white icon-save"></i>
+                </footer>
+            </article>
+            
+        </section>
+
+
     </section>
 
-    <!-- ---------------------------------------------------------------------------------------------
-                   SUBJECT 
-    ---------------------------------------------------------------------------------------------- -->
-    <section class="subject-page center none">
-        <!-- --- Secondary header --- -->
-        <header class="secondary-header">
-            <i class="icon icon-24 icon-white icon-arrow-left"></i>
-            <h2>Les trous noirs</h2>
-        </header>
-    
-        <!-- --- Progression --- -->
-        <section class="progression">
-            <div class="inline">
-                <h3 class="text-progression">Fini ta première leçon et remporte des nouveaux jetons 🌟</h3>
-                <img draggable="false" src="images/progression-10.png" alt="Progression">
-            </div>
-            <button class="button-s">Continuer</button>
-        </section>
-    
-        <!-- --- Secondary Title --- -->
-        <section class="secondary-title">
-            <i class="icon icon-20 icon-white icon-flag"></i>
-            <h3>Ton voyage <span class="colored-secondary-title">dans les trous noirs</span></h3>
-        </section>
 
-        <!-- --- Subjects --- -->
-        <section class="subject-container">
-            <article class="subject">
-                <div class="subject-img-text">
-                    <img class="subject-img" src="images/subjects/trou-noir.png" alt="trou noir">
-                    <div class="subject-text">
-                        <h3>L'expression "trou noir"</h3>
-                        <p class="body2 tags">En cours</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-arrow-right"></i>
-             </article>
-    
-             <article class="subject">
-                <div class="subject-img-text">
-                    <img class="subject-img" src="images/subjects/etoiles.png" alt="etoile">
-                    <div class="subject-text">
-                        <h3>Comment fonctionnent les étoiles</h3>
-                        <p class="body2 tags">Pas commencé</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-arrow-right"></i>
-             </article>
-    
-             <article class="subject">
-                <div class="subject-img-text">
-                    <img class="subject-img" src="images/subjects/etoiles-massives.png" alt="etoiles massives">
-                    <div class="subject-text">
-                        <h3>Le sort des étoiles massives</h3>
-                        <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-arrow-right"></i>
-             </article>
-    
-             <article class="subject">
-                <div class="subject-img-text">
-                    <img class="subject-img" src="images/subjects/theories-de-lespace.png" alt="théorie">
-                    <div class="subject-text">
-                        <h3>Le postulat des théories de l'espace</h3>
-                        <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-arrow-right"></i>
-             </article>
-    
-             <article class="subject">
-                <div class="subject-img-text">
-                    <img class="subject-img" src="images/subjects/realite-fiction.png" alt="realite et fiction">
-                    <div class="subject-text">
-                        <h3>La réalité dépasse la fiction</h3>
-                        <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-arrow-right"></i>
-             </article>
-    
-             <article class="subject">
-                <div class="subject-img-text">
-                    <img class="subject-img" src="images/subjects/quasars.png" alt="quasars">
-                    <div class="subject-text">
-                        <h3>Les quasars</h3>
-                        <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-arrow-right"></i>
-             </article>
-    
-             <article class="subject">
-                <div class="subject-img-text">
-                    <img class="subject-img" src="images/subjects/terme-trou-noir.png" alt="terme trou noir">
-                    <div class="subject-text">
-                        <h3>Le terme "trou noir"</h3>
-                        <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-arrow-right"></i>
-             </article>
-        </section>
-    </section>
+    <!-- //-------                               -----------//
+    --------------       NAV BAR ACTIVITY        -------------
+    //------------                               -------// -->
 
-    <!-- ---------------------------------------------------------------------------------------------
-                   QUIZ 1
-    ---------------------------------------------------------------------------------------------- -->
-    <section class="quiz-page center none">
-        <div class="quiz-header">
-            <button class="activity-button"><i class="icon icon-24 icon-white icon-close"></i></button>
-        </div>
-        <img class="img-quiz" src="images/quiz/trou-noir2.png" alt="image trou noir">
-        <div class="question">
-            <h3 class="colored-secondary-title">QUESTION 4/5</h3>
-            <h3>Comment se forme un trou noir ?</h3>
-        </div>
-        <p class="body answer-quiz">D’étoiles extrêmement massives</p>
-        <p class="body answer-quiz">D’étoiles comme le soleil</p>
-        <p class="body answer-quiz">Ils sont là depuis toujours</p>
-        <button class="button-m quiz-button">Suivant</button>
-    </section>
+    <section class="activity-page-container">
+        <!-- -----------------------------------------------------------------
+                       NAV BAR ACTIVITY
+        ------------------------------------------------------------------ -->    
+        <nav id="activity-nav">
+            <ul>
+                <li data-target="activity-article" class="active"><h3>Article</h3><i class="icon icon-24 icon-white icon-article"></i>
+                </li>
+                <li data-target="activity-game"><h3>Jeux</h3><i class="icon icon-24 icon-white icon-game"></i>
+                </li>
+                <li data-target="activity-token"><h3>Jetons</h3><i class="icon icon-24 icon-white icon-collection"></i>
+                </li>
+                <li data-target="activity-community"><h3>Communauté</h3><i class="icon icon-24 icon-white icon-community"></i>
+                </li>
+                <li data-target="activity-close" id="activity-close"><i class="icon icon-24 icon-white icon-close"></i>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- ---------------------------------------------------------------------------------------------
-                   QUIZ 2
-    ---------------------------------------------------------------------------------------------- -->
-    <section class="quiz-page center none">
-        <div class="quiz-header">
-            <button class="activity-button"><i class="icon icon-24 icon-white icon-close"></i></button>
-        </div>
-        <img class="img-quiz" src="images/quiz/trou-noir3.png" alt="image trou noir">
-        <div class="question">
-            <h3 class="colored-secondary-title">QUESTION 5/5</h3>
-            <h3>Comment un trou noir disparaît-il ?</h3>
-        </div>
-        <p class="body answer-quiz">D’un coup sans laisser de traces</p>
-        <p class="body answer-quiz">En laissant échapper un rayonnement </p>
-        <p class="body answer-quiz">Ils ne disparaissent pas </p>
-        <button class="button-m quiz-button">Commencer</button>
-    </section>
-
-    <!-- ---------------------------------------------------------------------------------------------
+        <!-- ------------------------------------------------------------------
                    ACTIVITY - ARTICLE
-    ---------------------------------------------------------------------------------------------- -->
-        <section class="article-page none">
+        ------------------------------------------------------------------- -->
+        <section id="activity-article" class="activity activity-properties">
             <h2 class="article-title">L'expression trou noir</h2>
             <div class="time">
                 <i class="icon icon-24 icon-primary icon-play"></i>
@@ -293,283 +317,301 @@
             </div>
         </section>
 
-    <!-- ---------------------------------------------------------------------------------------------
+        <!-- -----------------------------------------------------------------
                    ACTIVITY - GAME
-    ---------------------------------------------------------------------------------------------- -->
-    <section class="game-page none">
-        <h2 class="game-title">Comment fonctionne le soleil ?</h2>
-        <p class="body2 game-text">Glisse et dépose la réponse</p>
-        <img class="img-game" src="images/game/soleil.png" alt="image soleil">
-        <div class="arrows">
-            <img src="images/game/fleche-bas.png" alt="fleche vers le bas">
-            <img src="images/game/fleche-haut.png" alt="fleche vers le haut">
-        </div>
-        <div class="circles">
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-        <div class="answers">
-            <h3 class="answer">Pression thermique</h3>
-            <h3 class="answer">Gravité</h3>
-        </div>
+        ------------------------------------------------------------------ -->
+        <section id="activity-game" class="activity game-page activity-properties">
+            <h2 class="game-title">Comment fonctionne le soleil ?</h2>
+            <p class="body2 game-text">Glisse et dépose la réponse</p>
+            <img class="img-game" src="images/game/soleil.png" alt="image soleil">
+            <div class="arrows">
+                <img src="images/game/fleche-bas.png" alt="fleche vers le bas">
+                <img src="images/game/fleche-haut.png" alt="fleche vers le haut">
+            </div>
+            <div class="circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="answers">
+                <h3 class="answer">Pression thermique</h3>
+                <h3 class="answer">Gravité</h3>
+            </div>
+        </section>
+
+        <!-- -------------------------------------------------------------------
+                    ACTIVITY - TOKENS
+        -------------------------------------------------------------------- -->
+        <section id="activity-token" class="activity token-page activity-properties">
+            <h2 class="token-title">Thème des <span class="colored-secondary-title">trous noirs</span></h2>
+            <article class="token-grid">
+                <img src="images/tokens/token-1.png" alt="token-1" class="img-token">
+                <img src="images/tokens/token-2.png" alt="token-2" class="img-token">
+                <img src="images/tokens/token-3.png" alt="token-3" class="img-token">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </article>
+        </section>
+
+        <!-- --------------------------------------------------------------------
+                    ACTIVITY - COMMUNITY
+        --------------------------------------------------------------------- -->
+        <section id="activity-community" class="activity community-page activity-properties">
+            <article class="ask-question">
+                <img src="images/trou-noir2.png" alt="" class="pp">
+                <div class="question-community">
+                    <h3>Poser une question</h3>
+                    <p class="body2">Écrivez ici...</p>
+                </div>
+            </article>
+            <article class="community-post">
+                <header class="header-post">
+                    <div class="pp-pseudo">
+                        <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
+                        <div class="pseudo-statu">
+                            <h3>Astrogeek</h3>
+                            <p class="body2">Confirmé · 23h</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-more"></i>
+                </header>
+                <div class="contenu-post">
+                    <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
+                    <img src="images/quiz/trou-noir2.png" alt="image trou noir">
+                </div>
+                <footer class="footer-post">
+                    <div class="heart-comment">
+                        <i class="icon icon-20 icon-white icon-heart"></i>
+                        <i class="icon icon-20 icon-white icon-comment"></i>
+                    </div>
+                    <i class="icon icon-20 icon-white icon-save"></i>
+                </footer>
+            </article>
+            <article class="community-post">
+                <header class="header-post">
+                    <div class="pp-pseudo">
+                        <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
+                        <div class="pseudo-statu">
+                            <h3>Astrogeek</h3>
+                            <p class="body2">Confirmé · 23h</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-more"></i>
+                </header>
+                <div class="contenu-post">
+                    <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
+                </div>
+                <footer class="footer-post">
+                    <div class="heart-comment">
+                        <i class="icon icon-20 icon-white icon-heart"></i>
+                        <i class="icon icon-20 icon-white icon-comment"></i>
+                    </div>
+                    <i class="icon icon-20 icon-white icon-save"></i>
+                </footer>
+            </article>
+            <article class="community-post">
+                <header class="header-post">
+                    <div class="pp-pseudo">
+                        <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
+                        <div class="pseudo-statu">
+                            <h3>Astrogeek</h3>
+                            <p class="body2">Confirmé · 23h</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-more"></i>
+                </header>
+                <div class="contenu-post">
+                    <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
+                </div>
+                <footer class="footer-post">
+                    <div class="heart-comment">
+                        <i class="icon icon-20 icon-white icon-heart"></i>
+                        <i class="icon icon-20 icon-white icon-comment"></i>
+                    </div>
+                    <i class="icon icon-20 icon-white icon-save"></i>
+                </footer>
+            </article>
+            <article class="community-post">
+                <header class="header-post">
+                    <div class="pp-pseudo">
+                        <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
+                        <div class="pseudo-statu">
+                            <h3>Astrogeek</h3>
+                            <p class="body2">Confirmé · 23h</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-more"></i>
+                </header>
+                <div class="contenu-post">
+                    <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
+                    <img src="images/quiz/trou-noir2.png" alt="image trou noir">
+                </div>
+                <footer class="footer-post">
+                    <div class="heart-comment">
+                        <i class="icon icon-20 icon-white icon-heart"></i>
+                        <i class="icon icon-20 icon-white icon-comment"></i>
+                    </div>
+                    <i class="icon icon-20 icon-white icon-save"></i>
+                </footer>
+            </article>
+        </section>
+
     </section>
 
-    <!-- ---------------------------------------------------------------------------------------------
-                   ACTIVITY - TOKENS
-    ---------------------------------------------------------------------------------------------- -->
-    <section class="token-page">
-        <h2 class="token-title">Thème des <span class="colored-secondary-title">trous noirs</span></h2>
-        <article class="token-grid">
-            <img src="images/tokens/token-1.png" alt="token-1" class="img-token">
-            <img src="images/tokens/token-2.png" alt="token-2" class="img-token">
-            <img src="images/tokens/token-3.png" alt="token-3" class="img-token">
-            <div class="token"></div>
-            <div class="token"></div>
-            <div class="token"></div>
-            <div class="token"></div>
-            <div class="token"></div>
-            <div class="token"></div>
-            <div class="token"></div>
-        </article>
+
+    <!-- //-------                          -----------//
+    --------------       NO NAV BAR         -------------
+    //------------                          -------// -->
+
+    <section class="no-nav none">
+        <!-- -------------------------------------------------------------------
+                       SUBJECT 
+        -------------------------------------------------------------------- -->
+        <section class="subject-page center">
+            <!-- --- Secondary header --- -->
+            <header class="secondary-header">
+                <i class="icon icon-24 icon-white icon-arrow-left"></i>
+                <h2>Les trous noirs</h2>
+            </header>
+        
+            <!-- --- Progression --- -->
+            <section class="progression">
+                <div class="inline">
+                    <h3 class="text-progression">Fini ta première leçon et remporte des nouveaux jetons 🌟</h3>
+                    <img draggable="false" src="images/progression-10.png" alt="Progression">
+                </div>
+                <button class="button-s">Continuer</button>
+            </section>
+        
+            <!-- --- Secondary Title --- -->
+            <section class="secondary-title">
+                <i class="icon icon-20 icon-white icon-flag"></i>
+                <h3>Ton voyage <span class="colored-secondary-title">dans les trous noirs</span></h3>
+            </section>
+    
+            <!-- --- Subjects --- -->
+            <section class="subject-container">
+                <article class="subject">
+                    <div class="subject-img-text">
+                        <img class="subject-img" src="images/subjects/trou-noir.png" alt="trou noir">
+                        <div class="subject-text">
+                            <h3>L'expression "trou noir"</h3>
+                            <p class="body2 tags">En cours</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-arrow-right"></i>
+                 </article>
+        
+                 <article class="subject">
+                    <div class="subject-img-text">
+                        <img class="subject-img" src="images/subjects/etoiles.png" alt="etoile">
+                        <div class="subject-text">
+                            <h3>Comment fonctionnent les étoiles</h3>
+                            <p class="body2 tags">Pas commencé</p>
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-arrow-right"></i>
+                 </article>
+        
+                 <article class="subject">
+                    <div class="subject-img-text">
+                        <img class="subject-img" src="images/subjects/etoiles-massives.png" alt="etoiles massives">
+                        <div class="subject-text">
+                            <h3>Le sort des étoiles massives</h3>
+                            <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-arrow-right"></i>
+                 </article>
+        
+                 <article class="subject">
+                    <div class="subject-img-text">
+                        <img class="subject-img" src="images/subjects/theories-de-lespace.png" alt="théorie">
+                        <div class="subject-text">
+                            <h3>Le postulat des théories de l'espace</h3>
+                            <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-arrow-right"></i>
+                 </article>
+        
+                 <article class="subject">
+                    <div class="subject-img-text">
+                        <img class="subject-img" src="images/subjects/realite-fiction.png" alt="realite et fiction">
+                        <div class="subject-text">
+                            <h3>La réalité dépasse la fiction</h3>
+                            <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-arrow-right"></i>
+                 </article>
+        
+                 <article class="subject">
+                    <div class="subject-img-text">
+                        <img class="subject-img" src="images/subjects/quasars.png" alt="quasars">
+                        <div class="subject-text">
+                            <h3>Les quasars</h3>
+                            <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-arrow-right"></i>
+                 </article>
+        
+                 <article class="subject">
+                    <div class="subject-img-text">
+                        <img class="subject-img" src="images/subjects/terme-trou-noir.png" alt="terme trou noir">
+                        <div class="subject-text">
+                            <h3>Le terme "trou noir"</h3>
+                            <img class="icon icon-24" src="icons/lock.svg" alt="icon lock">
+                        </div>
+                    </div>
+                    <i class="icon icon-24 icon-white icon-arrow-right"></i>
+                 </article>
+            </section>
+        </section>
+    
+        <!-- -------------------------------------------------------------------
+                       QUIZ 1
+        -------------------------------------------------------------------- -->
+        <section class="quiz-page center">
+            <div class="quiz-header">
+                <button class="activity-button"><i class="icon icon-24 icon-white icon-close"></i></button>
+            </div>
+            <img class="img-quiz" src="images/quiz/trou-noir2.png" alt="image trou noir">
+            <div class="question">
+                <h3 class="colored-secondary-title">QUESTION 4/5</h3>
+                <h3>Comment se forme un trou noir ?</h3>
+            </div>
+            <p class="body answer-quiz">D’étoiles extrêmement massives</p>
+            <p class="body answer-quiz">D’étoiles comme le soleil</p>
+            <p class="body answer-quiz">Ils sont là depuis toujours</p>
+            <button class="button-m quiz-button">Suivant</button>
+        </section>
+    
+        <!-- -------------------------------------------------------------------
+                       QUIZ 2
+        -------------------------------------------------------------------- -->
+        <section class="quiz-page center">
+            <div class="quiz-header">
+                <button class="activity-button"><i class="icon icon-24 icon-white icon-close"></i></button>
+            </div>
+            <img class="img-quiz" src="images/quiz/trou-noir3.png" alt="image trou noir">
+            <div class="question">
+                <h3 class="colored-secondary-title">QUESTION 5/5</h3>
+                <h3>Comment un trou noir disparaît-il ?</h3>
+            </div>
+            <p class="body answer-quiz">D’un coup sans laisser de traces</p>
+            <p class="body answer-quiz">En laissant échapper un rayonnement </p>
+            <p class="body answer-quiz">Ils ne disparaissent pas </p>
+            <button class="button-m quiz-button">Commencer</button>
+        </section>
     </section>
 
-    <!-- ---------------------------------------------------------------------------------------------
-                   ACTIVITY - COMMUNITY
-    ---------------------------------------------------------------------------------------------- -->
-    <section class="community-page none">
-        <article class="ask-question">
-            <img src="images/trou-noir2.png" alt="" class="pp">
-            <div class="question-community">
-                <h3>Poser une question</h3>
-                <p class="body2">Écrivez ici...</p>
-            </div>
-        </article>
-        <article class="community-post">
-            <header class="header-post">
-                <div class="pp-pseudo">
-                    <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
-                    <div class="pseudo-statu">
-                        <h3>Astrogeek</h3>
-                        <p class="body2">Confirmé · 23h</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-more"></i>
-            </header>
-            <div class="contenu-post">
-                <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
-                <img src="images/quiz/trou-noir2.png" alt="image trou noir">
-            </div>
-            <footer class="footer-post">
-                <div class="heart-comment">
-                    <i class="icon icon-20 icon-white icon-heart"></i>
-                    <i class="icon icon-20 icon-white icon-comment"></i>
-                </div>
-                <i class="icon icon-20 icon-white icon-save"></i>
-            </footer>
-         </article>
-         <article class="community-post">
-            <header class="header-post">
-                <div class="pp-pseudo">
-                    <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
-                    <div class="pseudo-statu">
-                        <h3>Astrogeek</h3>
-                        <p class="body2">Confirmé · 23h</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-more"></i>
-            </header>
-            <div class="contenu-post">
-                <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
-            </div>
-            <footer class="footer-post">
-                <div class="heart-comment">
-                    <i class="icon icon-20 icon-white icon-heart"></i>
-                    <i class="icon icon-20 icon-white icon-comment"></i>
-                </div>
-                <i class="icon icon-20 icon-white icon-save"></i>
-            </footer>
-         </article>
-         <article class="community-post">
-            <header class="header-post">
-                <div class="pp-pseudo">
-                    <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
-                    <div class="pseudo-statu">
-                        <h3>Astrogeek</h3>
-                        <p class="body2">Confirmé · 23h</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-more"></i>
-            </header>
-            <div class="contenu-post">
-                <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
-            </div>
-            <footer class="footer-post">
-                <div class="heart-comment">
-                    <i class="icon icon-20 icon-white icon-heart"></i>
-                    <i class="icon icon-20 icon-white icon-comment"></i>
-                </div>
-                <i class="icon icon-20 icon-white icon-save"></i>
-            </footer>
-         </article>
-         <article class="community-post">
-            <header class="header-post">
-                <div class="pp-pseudo">
-                    <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
-                    <div class="pseudo-statu">
-                        <h3>Astrogeek</h3>
-                        <p class="body2">Confirmé · 23h</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-more"></i>
-            </header>
-            <div class="contenu-post">
-                <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
-                <img src="images/quiz/trou-noir2.png" alt="image trou noir">
-            </div>
-            <footer class="footer-post">
-                <div class="heart-comment">
-                    <i class="icon icon-20 icon-white icon-heart"></i>
-                    <i class="icon icon-20 icon-white icon-comment"></i>
-                </div>
-                <i class="icon icon-20 icon-white icon-save"></i>
-            </footer>
-         </article>
-    </section>
 
-
-    <!-- ---------------------------------------------------------------------------------------------
-                   COMMUNITY
-    ---------------------------------------------------------------------------------------------- -->
-    <section class="community none">
-        <header class="header">
-            <h1>Communauté</h1>
-                <i class="icon icon-24 icon-primary icon-add icon-header"></i>
-        </header>
-        <article class="community-post">
-            <header class="header-post">
-                <div class="pp-pseudo">
-                    <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
-                    <div class="pseudo-statu">
-                        <h3>Astrogeek</h3>
-                        <p class="body2">Confirmé · 23h</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-more"></i>
-            </header>
-            <div class="contenu-post">
-                <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
-                <img src="images/quiz/trou-noir2.png" alt="image trou noir">
-            </div>
-            <footer class="footer-post">
-                <div class="heart-comment">
-                    <i class="icon icon-20 icon-white icon-heart"></i>
-                    <i class="icon icon-20 icon-white icon-comment"></i>
-                </div>
-                <i class="icon icon-20 icon-white icon-save"></i>
-            </footer>
-         </article>
-         <article class="community-post">
-            <header class="header-post">
-                <div class="pp-pseudo">
-                    <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
-                    <div class="pseudo-statu">
-                        <h3>Astrogeek</h3>
-                        <p class="body2">Confirmé · 23h</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-more"></i>
-            </header>
-            <div class="contenu-post">
-                <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
-            </div>
-            <footer class="footer-post">
-                <div class="heart-comment">
-                    <i class="icon icon-20 icon-white icon-heart"></i>
-                    <i class="icon icon-20 icon-white icon-comment"></i>
-                </div>
-                <i class="icon icon-20 icon-white icon-save"></i>
-            </footer>
-         </article>
-         <article class="community-post">
-            <header class="header-post">
-                <div class="pp-pseudo">
-                    <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
-                    <div class="pseudo-statu">
-                        <h3>Astrogeek</h3>
-                        <p class="body2">Confirmé · 23h</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-more"></i>
-            </header>
-            <div class="contenu-post">
-                <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
-            </div>
-            <footer class="footer-post">
-                <div class="heart-comment">
-                    <i class="icon icon-20 icon-white icon-heart"></i>
-                    <i class="icon icon-20 icon-white icon-comment"></i>
-                </div>
-                <i class="icon icon-20 icon-white icon-save"></i>
-            </footer>
-         </article>
-         <article class="community-post">
-            <header class="header-post">
-                <div class="pp-pseudo">
-                    <img class="img-pp" src="images/trou-noir2.png" alt="photo de profil">
-                    <div class="pseudo-statu">
-                        <h3>Astrogeek</h3>
-                        <p class="body2">Confirmé · 23h</p>
-                    </div>
-                </div>
-                <i class="icon icon-24 icon-white icon-more"></i>
-            </header>
-            <div class="contenu-post">
-                <p class="body2">Le saviez- vous les trous noirs sont le reste d'une étoile massive qui a dépassé le stade d'étoile à neutrons en s'effondrant sur elle-même.</p>
-                <img src="images/quiz/trou-noir2.png" alt="image trou noir">
-            </div>
-            <footer class="footer-post">
-                <div class="heart-comment">
-                    <i class="icon icon-20 icon-white icon-heart"></i>
-                    <i class="icon icon-20 icon-white icon-comment"></i>
-                </div>
-                <i class="icon icon-20 icon-white icon-save"></i>
-            </footer>
-         </article>
-    </section>
-
-    <!-- ---------------------------------------------------------------------------------------------
-                   NAV BAR
-    ---------------------------------------------------------------------------------------------- -->    
-    <nav class="nav none">
-        <i class="icon-04 icon-primary icon-nav-round nav-indicator"></i>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a class="nav-link" href="#home">
-                    <i class="icon icon-24 icon-primary icon-home"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#collection">
-                    <i class="icon icon-24 icon-white icon-collection"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#community">
-                    <i class="icon icon-24 icon-white icon-community"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#challenges">
-                    <i class="icon icon-24 icon-white icon-challenges"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#profil">
-                    <i class="icon icon-24 icon-white icon-profil"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
     
     <script src="script.js"></script>
     <script src="carousel.js"></script>
