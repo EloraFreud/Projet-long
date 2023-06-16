@@ -14,15 +14,15 @@
     --------------       NAV BAR        -------------
     //------------                      -------// -->
 
-    <section class="home-page-container none">
+    <section class="home-page-container">
         <!-- ----------------------------------------------------------------
                        NAV BAR
         ----------------------------------------------------------------- -->    
-        <nav class="nav">
+        <nav class="nav none">
             <i class="icon-04 icon-primary icon-nav-round nav-indicator"></i>
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">
+                    <a class="nav-link" href="#home" id="nav-home">
                         <i class="icon icon-24 icon-primary icon-home"></i>
                     </a>
                 </li>
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#community">
+                    <a class="nav-link" href="#community" id="nav-community">
                         <i class="icon icon-24 icon-white icon-community"></i>
                     </a>
                 </li>
@@ -52,7 +52,7 @@
         <!-- ------------------------------------------------------------------
                     HOME 
         ------------------------------------------------------------------- -->
-        <section class="home-page center none">
+        <section class="home-page center none" id="home-page">
             <!-- --- Header --- -->
             <header class="header">
               <h1>Explorer l'espace</h1>
@@ -165,7 +165,7 @@
         <!-- -----------------------------------------------------------------
                    COMMUNITY
         ------------------------------------------------------------------ -->
-        <section class="community none">
+        <section class="community center none" id="community-page">
             <header class="header">
                 <h1>Communauté</h1>
                     <i class="icon icon-24 icon-primary icon-add icon-header"></i>
@@ -260,7 +260,7 @@
                     <i class="icon icon-20 icon-white icon-save"></i>
                 </footer>
             </article>
-            
+
         </section>
 
 
@@ -271,7 +271,7 @@
     --------------       NAV BAR ACTIVITY        -------------
     //------------                               -------// -->
 
-    <section class="activity-page-container">
+    <section class="activity-page-container none" id="section-activity">
         <!-- -----------------------------------------------------------------
                        NAV BAR ACTIVITY
         ------------------------------------------------------------------ -->    
@@ -285,7 +285,7 @@
                 </li>
                 <li data-target="activity-community"><h3>Communauté</h3><i class="icon icon-24 icon-white icon-community"></i>
                 </li>
-                <li data-target="activity-close" id="activity-close"><i class="icon icon-24 icon-white icon-close"></i>
+                <li id="activity-close"><i class="icon icon-24 icon-white icon-close"></i>
                 </li>
             </ul>
         </nav>
@@ -467,11 +467,11 @@
     --------------       NO NAV BAR         -------------
     //------------                          -------// -->
 
-    <section class="no-nav none">
+    <section class="no-nav">
         <!-- -------------------------------------------------------------------
                        SUBJECT 
         -------------------------------------------------------------------- -->
-        <section class="subject-page center">
+        <section class="subject-page center" id="subject-page">
             <!-- --- Secondary header --- -->
             <header class="secondary-header">
                 <i class="icon icon-24 icon-white icon-arrow-left"></i>
@@ -495,7 +495,7 @@
     
             <!-- --- Subjects --- -->
             <section class="subject-container">
-                <article class="subject">
+                <article class="subject" id="subject">
                     <div class="subject-img-text">
                         <img class="subject-img" src="images/subjects/trou-noir.png" alt="trou noir">
                         <div class="subject-text">
@@ -577,9 +577,9 @@
         <!-- -------------------------------------------------------------------
                        QUIZ 1
         -------------------------------------------------------------------- -->
-        <section class="quiz-page center">
+        <section class="quiz-page center" id="quiz-1">
             <div class="quiz-header">
-                <button class="activity-button"><i class="icon icon-24 icon-white icon-close"></i></button>
+                <button class="activity-button" id="quiz-close"><i class="icon icon-24 icon-white icon-close"></i></button>
             </div>
             <img class="img-quiz" src="images/quiz/trou-noir2.png" alt="image trou noir">
             <div class="question">
@@ -589,15 +589,15 @@
             <p class="body answer-quiz">D’étoiles extrêmement massives</p>
             <p class="body answer-quiz">D’étoiles comme le soleil</p>
             <p class="body answer-quiz">Ils sont là depuis toujours</p>
-            <button class="button-m quiz-button">Suivant</button>
+            <button class="button-m quiz-button" id="quiz-button-suivant">Suivant</button>
         </section>
     
         <!-- -------------------------------------------------------------------
                        QUIZ 2
         -------------------------------------------------------------------- -->
-        <section class="quiz-page center">
+        <section class="quiz-page center" id="quiz-2">
             <div class="quiz-header">
-                <button class="activity-button"><i class="icon icon-24 icon-white icon-close"></i></button>
+                <button class="activity-button" id="quiz-close"><i class="icon icon-24 icon-white icon-close"></i></button>
             </div>
             <img class="img-quiz" src="images/quiz/trou-noir3.png" alt="image trou noir">
             <div class="question">
@@ -607,7 +607,7 @@
             <p class="body answer-quiz">D’un coup sans laisser de traces</p>
             <p class="body answer-quiz">En laissant échapper un rayonnement </p>
             <p class="body answer-quiz">Ils ne disparaissent pas </p>
-            <button class="button-m quiz-button">Commencer</button>
+            <button class="button-m quiz-button" id="quiz-button-commencer">Commencer</button>
         </section>
     </section>
 
