@@ -18,7 +18,7 @@
         <!-- ----------------------------------------------------------------
                        NAV BAR
         ----------------------------------------------------------------- -->    
-        <nav class="nav none">
+        <nav class="nav">
             <i class="icon-04 icon-primary icon-nav-round nav-indicator"></i>
             <ul class="nav-list">
                 <li class="nav-item">
@@ -52,7 +52,7 @@
         <!-- ------------------------------------------------------------------
                     HOME 
         ------------------------------------------------------------------- -->
-        <section class="home-page center none" id="home-page">
+        <section class="home-page center" id="home-page">
             <!-- --- Header --- -->
             <header class="header">
               <h1>Explorer l'espace</h1>
@@ -79,20 +79,20 @@
     
             <!-- --- Card carousel --- -->
 
+            <section class="card">
+                <img class="card-image" src="images/themes/trou-noir.png" alt="image trou noir">
+                <article class="card-bottom">
+                    <div>
+                        <h2 class="h2-card">Les trous noirs</h2>
+                        <h3 class="h3-card">10 leçons</h3>
+                        <p class="body2 tags">En cours</p>
+                    </div>
+                    <button class="button-arrow" id="button-card">
+                        <i class="icon icon-24 icon-black icon-arrow-right"></i>
+                    </button>
+                </article>
+            </section>
             <!-- <article id="carousel" class="carousel">
-                <section class="card">
-                    <img class="card-image" src="images/themes/trou-noir.png" alt="image trou noir">
-                    <article class="card-bottom">
-                        <div>
-                            <h2 class="h2-card">Les trous noirs</h2>
-                            <h3 class="h3-card">10 leçons</h3>
-                            <p class="body2 tags">En cours</p>
-                        </div>
-                        <button class="button-arrow">
-                            <i class="icon icon-24 icon-black icon-arrow-right"></i>
-                        </button>
-                    </article>
-                </section>
                 <section class="card">
                     <img class="card-image" src="images/themes/systeme-solaire.png" alt="image systeme solaire">
                     <article class="card-bottom">
@@ -471,10 +471,10 @@
         <!-- -------------------------------------------------------------------
                        SUBJECT 
         -------------------------------------------------------------------- -->
-        <section class="subject-page center" id="subject-page">
+        <section class="subject-page center none" id="subject-page">
             <!-- --- Secondary header --- -->
             <header class="secondary-header">
-                <i class="icon icon-24 icon-white icon-arrow-left"></i>
+                <i id="return-home" class="icon icon-24 icon-white icon-arrow-left"></i>
                 <h2>Les trous noirs</h2>
             </header>
         
@@ -577,7 +577,7 @@
         <!-- -------------------------------------------------------------------
                        QUIZ 1
         -------------------------------------------------------------------- -->
-        <section class="quiz-page center" id="quiz-1">
+        <section class="quiz-page center none" id="quiz-1">
             <div class="quiz-header">
                 <button class="activity-button" id="quiz-close"><i class="icon icon-24 icon-white icon-close"></i></button>
             </div>
@@ -595,7 +595,7 @@
         <!-- -------------------------------------------------------------------
                        QUIZ 2
         -------------------------------------------------------------------- -->
-        <section class="quiz-page center" id="quiz-2">
+        <section class="quiz-page center none" id="quiz-2">
             <div class="quiz-header">
                 <button class="activity-button" id="quiz-close"><i class="icon icon-24 icon-white icon-close"></i></button>
             </div>

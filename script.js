@@ -166,3 +166,34 @@ closeActivity.forEach((link) => {
     subjectPage.classList.remove("none");
   });
 });
+
+const returnHome = document.querySelectorAll("#return-home");
+returnHome.forEach((link) => {
+  link.addEventListener("click", () => {
+
+    subjectPage.classList.add("none");
+    subjectPage.classList.remove("visible");
+    
+    homePage.classList.add("visible");
+    homePage.classList.remove("none");
+
+    navHome.classList.add("visible");
+    navHome.classList.remove("none");
+  });
+});
+
+const buttonCard = document.querySelectorAll("#button-card");
+buttonCard.forEach((link) => {
+  link.addEventListener("click", () => {
+
+    homePage.classList.add("none");
+    homePage.classList.remove("visible");
+
+    subjectPage.classList.add("visible");
+    subjectPage.classList.remove("none");
+
+    navHome.classList.add("none");
+    navHome.classList.remove("visible");
+  });
+});
+

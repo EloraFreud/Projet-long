@@ -317,11 +317,12 @@ p{
 }
 
 .card{
-    width: var(--width-100);
+    width: var(--width-85);
     aspect-ratio: 1/1;
     border-radius: var(--radius-24);
     overflow: hidden;
     position: absolute;
+    margin: auto;
     transition: transform 0.3s ease-out, opacity 0.3s ease-in;
 }
 
