@@ -18,11 +18,11 @@
         <!-- ----------------------------------------------------------------
                        NAV BAR
         ----------------------------------------------------------------- -->    
-        <nav class="nav">
+        <nav class="nav transition" id="nav-home">
             <i class="icon-04 icon-primary icon-nav-round nav-indicator"></i>
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home" id="nav-home">
+                    <a class="nav-link CTA" href="#home" id="nav-home" data-target="home-page nav-home">
                         <i class="icon icon-24 icon-primary icon-home"></i>
                     </a>
                 </li>
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#community" id="nav-community">
+                    <a class="nav-link CTA" href="#community" id="nav-community" data-target="community-page nav-home">
                         <i class="icon icon-24 icon-white icon-community"></i>
                     </a>
                 </li>
@@ -52,7 +52,7 @@
         <!-- ------------------------------------------------------------------
                     HOME 
         ------------------------------------------------------------------- -->
-        <section class="home-page center" id="home-page">
+        <section class="home-page center transition" id="home-page">
             <!-- --- Header --- -->
             <header class="header">
               <h1>Explorer l'espace</h1>
@@ -68,7 +68,7 @@
                   <h3 class="text-progression">Wow ! <br> objectif quotidien est presque atteint 🪐</h3>
                   <img draggable="false" src="images/progression-75.png" alt="Progression">
                 </div>
-                <button class="button-s">Continuer</button>
+                <button class="button-s CTA" data-target="subject-page">Continuer</button>
             </section>
     
             <!-- --- Secondary Title --- -->
@@ -87,7 +87,7 @@
                         <h3 class="h3-card">10 leçons</h3>
                         <p class="body2 tags">En cours</p>
                     </div>
-                    <button class="button-arrow" id="button-card">
+                    <button class="button-arrow CTA" id="button-card" data-target="subject-page">
                         <i class="icon icon-24 icon-black icon-arrow-right"></i>
                     </button>
                 </article>
@@ -165,7 +165,7 @@
         <!-- -----------------------------------------------------------------
                    COMMUNITY
         ------------------------------------------------------------------ -->
-        <section class="community center none" id="community-page">
+        <section class="community center transition none" id="community-page">
             <header class="header">
                 <h1>Communauté</h1>
                     <i class="icon icon-24 icon-primary icon-add icon-header"></i>
@@ -271,7 +271,7 @@
     --------------       NAV BAR ACTIVITY        -------------
     //------------                               -------// -->
 
-    <section class="activity-page-container none" id="section-activity">
+    <section class="activity-page-container transition none" id="section-activity">
         <!-- -----------------------------------------------------------------
                        NAV BAR ACTIVITY
         ------------------------------------------------------------------ -->    
@@ -285,7 +285,7 @@
                 </li>
                 <li data-target="activity-community"><h3>Communauté</h3><i class="icon icon-24 icon-white icon-community"></i>
                 </li>
-                <li id="activity-close"><i class="icon icon-24 icon-white icon-close"></i>
+                <li id="activity-close CTA" data-target="subject-page"  ><i class="icon icon-24 icon-white icon-close"></i>
                 </li>
             </ul>
         </nav>
@@ -471,10 +471,10 @@
         <!-- -------------------------------------------------------------------
                        SUBJECT 
         -------------------------------------------------------------------- -->
-        <section class="subject-page center none" id="subject-page">
+        <section class="subject-page center transition activity none" id="subject-page">
             <!-- --- Secondary header --- -->
             <header class="secondary-header">
-                <i id="return-home" class="icon icon-24 icon-white icon-arrow-left"></i>
+                <i data-target="home-page nav-home" id="return-home" class="icon icon-24 icon-white icon-arrow-left CTA"></i>
                 <h2>Les trous noirs</h2>
             </header>
         
@@ -484,7 +484,7 @@
                     <h3 class="text-progression">Fini ta première leçon et remporte des nouveaux jetons 🌟</h3>
                     <img draggable="false" src="images/progression-10.png" alt="Progression">
                 </div>
-                <button class="button-s">Continuer</button>
+                <button class="button-s CTA" data-target="section-activity">Continuer</button>
             </section>
         
             <!-- --- Secondary Title --- -->
@@ -495,7 +495,7 @@
     
             <!-- --- Subjects --- -->
             <section class="subject-container">
-                <article class="subject" id="subject">
+                <article class="subject CTA" id="subject" data-target="quiz-1">
                     <div class="subject-img-text">
                         <img class="subject-img" src="images/subjects/trou-noir.png" alt="trou noir">
                         <div class="subject-text">
@@ -577,9 +577,9 @@
         <!-- -------------------------------------------------------------------
                        QUIZ 1
         -------------------------------------------------------------------- -->
-        <section class="quiz-page center none" id="quiz-1">
+        <section class="quiz-page center transition none" id="quiz-1">
             <div class="quiz-header">
-                <button class="activity-button" id="quiz-close"><i class="icon icon-24 icon-white icon-close"></i></button>
+                <button class="activity-button CTA" id="quiz-close" data-target="subject-page"><i class="icon icon-24 icon-white icon-close"></i></button>
             </div>
             <img class="img-quiz" src="images/quiz/trou-noir2.png" alt="image trou noir">
             <div class="question">
@@ -589,15 +589,15 @@
             <p class="body answer-quiz">D’étoiles extrêmement massives</p>
             <p class="body answer-quiz">D’étoiles comme le soleil</p>
             <p class="body answer-quiz">Ils sont là depuis toujours</p>
-            <button class="button-m quiz-button" id="quiz-button-suivant">Suivant</button>
+            <button class="button-m quiz-button CTA" id="quiz-button-suivant" data-target="quiz-2">Suivant</button>
         </section>
     
         <!-- -------------------------------------------------------------------
                        QUIZ 2
         -------------------------------------------------------------------- -->
-        <section class="quiz-page center none" id="quiz-2">
+        <section class="quiz-page center transition none" id="quiz-2">
             <div class="quiz-header">
-                <button class="activity-button" id="quiz-close"><i class="icon icon-24 icon-white icon-close"></i></button>
+                <button class="activity-button CTA" id="quiz-close" data-target="section-activity"><i class="icon icon-24 icon-white icon-close"></i></button>
             </div>
             <img class="img-quiz" src="images/quiz/trou-noir3.png" alt="image trou noir">
             <div class="question">
@@ -607,14 +607,14 @@
             <p class="body answer-quiz">D’un coup sans laisser de traces</p>
             <p class="body answer-quiz">En laissant échapper un rayonnement </p>
             <p class="body answer-quiz">Ils ne disparaissent pas </p>
-            <button class="button-m quiz-button" id="quiz-button-commencer">Commencer</button>
+            <button class="button-m quiz-button CTA" id="quiz-button-commencer" data-target="section-activity ">Commencer</button>
         </section>
     </section>
 
 
     
     <script src="script.js"></script>
-    <script src="carousel.js"></script>
+    <!-- <script src="carousel.js"></script> -->
 
 </body>
 </html>
