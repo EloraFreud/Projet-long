@@ -834,9 +834,17 @@ body::-webkit-scrollbar{
 .ask-question{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: var(--gap-16);
     align-items: center;
     margin-bottom: var(--margin-24);
+}
+
+.question-pp-title{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-16);
+    align-items: center;
 }
 
 /* --- Activity community --- */
@@ -899,7 +907,10 @@ body::-webkit-scrollbar{
     display: inherit;
 }
 
-#question-community{
+#question-community input,
+#question-community button,
+#question-community textarea,
+#question-community select{
 	padding: 0;
 	background: none;
 	border: none;

@@ -40,6 +40,7 @@ function updateIndicator(activeLink) {
 
 // activity nav bar
 const links = document.querySelectorAll("#activity-nav li:not(#activity-close)");
+const send = document.querySelectorAll(".icon-send");
 const activityElements = document.querySelectorAll(".activity");
 updateActivityNav(document.querySelector("#activity-nav li"));
 
@@ -49,6 +50,23 @@ links.forEach((link) => {
     updateActivityNav(link);
   });
 });
+
+send.forEach((link) => {
+  link.addEventListener("click", () => {
+    const activityTargetSend = link.dataset.target;
+
+    activityElements.forEach(element => {
+      if (element.id === activityTargetSend) {
+        element.classList.add("visible");
+        element.classList.remove("none");
+      } else {
+        element.classList.add("none");
+        element.classList.remove("visible");
+      }
+    })
+  });
+});
+
 
 function updateActivityNav(activeActivityLink) {
       const activityTarget = activeActivityLink.dataset.target;
@@ -96,7 +114,7 @@ cta.forEach((link) => {
 // mettre data target sur le CTA avec l'id de la page a afficher quand je clique sur ce CTA
 
 
-
+// selection des réponses aux questions du quiz
 const answerQuiz = document.querySelectorAll(".answer-quiz");
 
 answerQuiz.forEach((link) => {
