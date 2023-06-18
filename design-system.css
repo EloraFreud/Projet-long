@@ -1022,3 +1022,7 @@ input, textarea{
     display: flex;
     align-items: flex-start;
 }
+
+.contenu-answer p{
+    margin-bottom: var(--margin-16);
+}
