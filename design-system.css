@@ -567,7 +567,7 @@ img {
 .subject-container{
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 525px;
+    height: 535px;
     flex: 1;
 }
 
@@ -878,7 +878,7 @@ body::-webkit-scrollbar{
 /* --- Activity community --- */
 
 .center{
-    padding: var(--margin-32);
+    padding: 24px 32px 32px 32px;
     margin-bottom: var(--margin-32);
 } 
 
@@ -887,7 +887,7 @@ body::-webkit-scrollbar{
 #activity-nav {
     display: flex;
     justify-content: center;
-    padding: 24px 28px 16px 28px;
+    padding: 20px 28px 16px 28px;
 }
 
 #activity-nav>ul{
