@@ -600,6 +600,10 @@ img {
 }
 
 /* --- Activity article --- */
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .activity-properties{
     padding: var(--margin-28);
     background-color: var(--tertiary);
@@ -800,7 +804,6 @@ img {
     justify-content: space-between;
     width: var(--width-100);
     padding-bottom: var(--gap-20);
-    border-bottom: 1px solid var(--black);
 }
 
 .community-post{
@@ -894,4 +897,20 @@ img {
 
 .visible{
     display: inherit;
+}
+
+#question-community{
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    color: var(--white);
+}
+
+::placeholder{
+    color: var(--white);
 }
