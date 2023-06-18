@@ -907,10 +907,7 @@ body::-webkit-scrollbar{
     display: inherit;
 }
 
-#question-community input,
-#question-community button,
-#question-community textarea,
-#question-community select{
+#question-community{
 	padding: 0;
 	background: none;
 	border: none;
@@ -918,6 +915,8 @@ body::-webkit-scrollbar{
 	outline: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
 	appearance: none;
     color: var(--white);
 }
