@@ -122,6 +122,7 @@ p{
     display: inline-block;
     mask-size: cover;
     mask-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
 .icon-24{
@@ -370,7 +371,7 @@ ce qui veux dire "tous les <img> dans des .card*/
 	border-radius: var(--radius-24);
     padding: 1rem 1.5rem;
     position: fixed;
-    bottom: 1.5rem;
+    bottom: 2.5rem;
     right: 1.75rem;
     left: 1.75rem;
     z-index: 10;
@@ -456,7 +457,7 @@ ce qui veux dire "tous les <img> dans des .card*/
     display: flex;
     gap: var(--gap-8);
     width: var(--width-100);
-    margin-bottom: var(--margin-32);
+    margin-bottom: 2.5rem;
 }
 
 .colored-secondary-title{
@@ -698,9 +699,9 @@ body::-webkit-scrollbar{
 
 .img-game{
     display: flex;
-    width: 60%;
+    width: 50%;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .arrows{
