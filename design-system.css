@@ -123,6 +123,9 @@ p{
     mask-size: cover;
     mask-repeat: no-repeat;
     background-repeat: no-repeat;
+    background: none;
+    background-image: none;
+    background-color: none;
 }
 
 .icon-24{
@@ -158,117 +161,117 @@ p{
 }
 
 .icon-search{
-    mask: url("icons/search.svg");
+    mask-image: url("icons/search.svg");
     -webkit-mask-box-image: url("icons/search.svg");
 }
 
 .icon-notifications{
-    mask: url("icons/notifications.svg");
+    mask-image: url("icons/notifications.svg");
     -webkit-mask-box-image: url("icons/notifications.svg");
 }
 
 .icon-arrow-right{
-    mask: url("icons/arrow-right.svg");
+    mask-image: url("icons/arrow-right.svg");
     -webkit-mask-box-image: url("icons/arrow-right.svg");
 }
 
 .icon-home{
-    mask: url("icons/home.svg");
+    mask-image: url("icons/home.svg");
     -webkit-mask-box-image: url("icons/home.svg");
 }
 
 .icon-collection{
-    mask: url("icons/collection.svg");
+    mask-image: url("icons/collection.svg");
     -webkit-mask-box-image: url("icons/collection.svg");
 }
 
 .icon-community{
-    mask: url("icons/community.svg");
+    mask-image: url("icons/community.svg");
     -webkit-mask-box-image: url("icons/community.svg");
 }
 
 .icon-challenges{
-    mask: url("icons/challenges.svg");
+    mask-image: url("icons/challenges.svg");
     -webkit-mask-box-image: url("icons/challenges.svg");
 }
 
 .icon-profil{
-    mask: url("icons/profil.svg");
+    mask-image: url("icons/profil.svg");
     -webkit-mask-box-image: url("icons/profil.svg");
 }
 
 .icon-double-flag{
-    mask: url("icons/double-flag.svg");
+    mask-image: url("icons/double-flag.svg");
     -webkit-mask-box-image: url("icons/double-flag.svg");
 }
 
 .icon-nav-round{
-    mask: url("icons/nav-round.svg");
+    mask-image: url("icons/nav-round.svg");
     -webkit-mask-box-image: url("icons/nav-round.svg");
 }
 
 .icon-arrow-left{
-    mask: url("icons/arrow-left.svg");
+    mask-image: url("icons/arrow-left.svg");
     -webkit-mask-box-image: url("icons/arrow-left.svg");
 }
 
 .icon-flag{
-    mask: url("icons/flag.svg");
+    mask-image: url("icons/flag.svg");
     -webkit-mask-box-image: url("icons/flag.svg");
 }
 
 .icon-close{
-    mask: url("icons/close.svg");
+    mask-image: url("icons/close.svg");
     -webkit-mask-box-image: url("icons/close.svg");
 }
 
 .icon-article{
-    mask: url("icons/article.svg");
+    mask-image: url("icons/article.svg");
     -webkit-mask-box-image: url("icons/article.svg");
 }
 
 .icon-game{
-    mask: url("icons/game.svg");
+    mask-image: url("icons/game.svg");
     -webkit-mask-box-image: url("icons/game.svg");
 }
 
 .icon-comment{
-    mask: url("icons/comment.svg");
+    mask-image: url("icons/comment.svg");
     -webkit-mask-box-image: url("icons/comment.svg");
 }
 
 .icon-heart{
-    mask: url("icons/heart.svg");
+    mask-image: url("icons/heart.svg");
     -webkit-mask-box-image: url("icons/heart.svg");
 }
 
 .icon-save{
-    mask: url("icons/save.svg");
+    mask-image: url("icons/save.svg");
     -webkit-mask-box-image: url("icons/save.svg");
 }
 
 .icon-more{
-    mask: url("icons/more.svg");
+    mask-image: url("icons/more.svg");
     -webkit-mask-box-image: url("icons/more.svg");
 }
 
 .icon-send{
-    mask: url("icons/send.svg");
+    mask-image: url("icons/send.svg");
     -webkit-mask-box-image: url("icons/send.svg");
 }
 
 .icon-add{
-    mask: url("icons/add.svg");
+    mask-image: url("icons/add.svg");
     -webkit-mask-box-image: url("icons/add.svg");
 }
 
 .icon-play{
-    mask: url("icons/play.svg");
+    mask-image: url("icons/play.svg");
     -webkit-mask-box-image: url("icons/play.svg");
 }
 
 .icon-progression-75{
-    mask: url("icons/progression-75.svg");
+    mask-image: url("icons/progression-75.svg");
     -webkit-mask-box-image: url("icons/progression-75.svg");
 }
 
