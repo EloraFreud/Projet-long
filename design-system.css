@@ -121,6 +121,7 @@ p{
 .icon{
     display: inline-block;
     mask-size: cover;
+    background: cover;
     mask-repeat: no-repeat;
     background-repeat: no-repeat;
     background: none;
